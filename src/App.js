@@ -21,6 +21,9 @@ function App() {
   }
 
   async function requestSession(){
+
+    await setSession(session !== '...' ? '...' : '')
+
       await api.post(host + '/login.fcgi',{
           login: user,
           password: pass
