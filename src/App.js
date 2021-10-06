@@ -12,7 +12,7 @@ const pass = process.env.PASS_IDFLEX
 
 function App() {
 
-  const [session, setSession] = useState('')
+  const [session, setSession] = useState('...')
 
   async function OpenDor (session){
       await api.post(host + '/execute_actions.fcgi?session=' + session, {
@@ -31,7 +31,10 @@ function App() {
           setSession(response.data.session)
 
       })
-      .catch(erro => console.log(erro))
+      .catch(erro => {
+        console.log(erro)
+        setSession('Error Getting Session')
+      })
   }
 
   return (
@@ -40,7 +43,7 @@ function App() {
       <button onClick={requestSession}>Open</button>
       <div className="session">
         <h3>Session:</h3>
-        <h4>{session ? session : 'Error Getting Session'}</h4>
+        <h4>{session}</h4>
       </div>
     </div>
   );
