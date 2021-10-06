@@ -1,0 +1,82 @@
+.App{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid white;
+}
+
+.App button{
+    width: 100px;
+    height: 100px;
+
+    margin: 32px 0;
+
+    color: white;
+    font-family: 'Roboto', 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+
+    border-radius: 50%;
+    border: none;
+
+    cursor: pointer;
+    text-align: center;
+
+    /* outline: 3px solid #7DE2D1;
+    outline-offset: 4px; */
+    background-color: var(--backgroundColor);
+    box-shadow: inset 1px 1px 2px rgba(47,72,88,0.3), 
+              inset 3px 15px 45px rgba(47,72,88,0.1),
+              inset -1px -1px 2px rgba(0,0,0,0.5), 
+              inset -3px -15px 45px rgba(0,0,0,0.2),
+              1px 5px 30px -4px rgba(0,0,0,1);
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition:    0.1s ease-out;
+  -o-transition:      0.1s ease-out;
+  transition:         0.5s ease-out;
+}
+
+.App button:hover{
+    color: #41D3BD;
+}
+
+.App button:start
+
+.App button:before {
+    content: "";
+    background: #1D2C35;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    /* top: 0;
+    left: 50%; */
+    z-index: -1;
+    border-radius: 999px;
+    box-shadow: inset -1px -1px 2px rgba(255,255,255,0.3), 
+      inset -5px -15px 40px rgba(255,255,255,0.1),
+      inset 1px 1px 2px rgba(0,0,0,0.5), 
+      inset 5px 15px 40px rgba(0,0,0,0.2),
+      -2px -40px 50px -20px rgba(255,255,255,0.1),
+      2px 35px 50px -10px rgba(0,0,0,0.4),
+      0px 0px 25px 8px rgba(60,60,60,1);
+}
+
+.App .session{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.App .session h3{
+    font-size: 16px;
+}
+.App .session h4{
+    font-size: 12px;
+    font-weight: 300;
+}

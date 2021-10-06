@@ -1,5 +1,9 @@
 import { useState } from 'react';
 
+import './App.css'
+
+import Logo from './assets/Logo@0.75x.png'
+
 import api from './services/api'
 
 const host = "http://192.168.1.50"
@@ -32,9 +36,12 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Open Door</h2>
-      <h2>Session: {session}</h2>
+      <img src={Logo} alt="" />
       <button onClick={requestSession}>Open</button>
+      <div className="session">
+        <h3>Session:</h3>
+        <h4>{session ? session : 'Error Getting Session'}</h4>
+      </div>
     </div>
   );
 }
