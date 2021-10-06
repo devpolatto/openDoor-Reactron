@@ -1,14 +1,13 @@
 import { useState } from 'react';
+import api from './services/api'
 
 import './App.css'
 
 import Logo from './assets/Logo@0.75x.png'
 
-import api from './services/api'
-
 const host = "http://192.168.1.50"
-const user = process.env.USER_IDFLEX
-const pass = process.env.PASS_IDFLEX
+const user = "admin"
+const pass = "admin"
 
 function App() {
 
