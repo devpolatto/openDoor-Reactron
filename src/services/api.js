@@ -1,7 +1,8 @@
 import axios from 'axios';
+const settings = require('../config')
 
 const api = axios.create({
-   baseURL: process.env.URL_ID_FLEX_PRO,
+   baseURL: settings.keys.host,
 })
 
 export default api;

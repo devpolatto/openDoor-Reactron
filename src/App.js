@@ -5,9 +5,11 @@ import './App.css'
 
 import Logo from './assets/Logo@0.75x.png'
 
-const host = "http://192.168.1.50"
-const user = "admin"
-const pass = "admin"
+const settings = require('./config')
+
+const host = settings.keys.host
+const user = settings.keys.user
+const pass = settings.keys.password
 
 function App() {
 
