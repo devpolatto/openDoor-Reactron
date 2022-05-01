@@ -39,6 +39,7 @@ export const keys = {
 <p align="left">
 Run the app
 </p>
+
 ```bash
 # Start the project
 $ yarn electron
