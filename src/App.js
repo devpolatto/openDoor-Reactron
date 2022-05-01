@@ -2,10 +2,9 @@ import { useState } from 'react';
 import api from './services/api'
 
 import './App.css'
-
 import Logo from './assets/Logo@0.75x.png'
 
-const settings = require('../config')
+const settings = require('./config')
 
 const host = settings.keys.host
 const user = settings.keys.user
